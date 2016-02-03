@@ -1,0 +1,8 @@
+# download a video of "African Dum Music"
+youtube-dl https://www.youtube.com/watch?v=wXV39pybgJU
+
+# extract the audio as wav and combine into 1 channel
+avconv -i African\ Drum\ Music-wXV39pybgJU.mp4 -ac 1 -vn African\ Drum\ Music-wXV39pybgJU.wav
+
+# generate a 1 minute sample for quick experiments
+avconv -i African\ Drum\ Music-wXV39pybgJU.wav -ss 00:00:00 -t 00:01:00 African\ Drum\ Music-wXV39pybgJU-sm.wav
