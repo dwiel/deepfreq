@@ -2,3 +2,5 @@ numpy
 pyaudio
 librosa
 scipy
+graphcore
+pytest
